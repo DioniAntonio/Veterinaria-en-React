@@ -40,7 +40,7 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
     const handlesubmit = (e) => {
         e.preventDefault();
 
-        if([nombre,propietario,email,fecha,sintomas].includes(""))  {
+        if([nombre, propietario, email, fecha, sintomas].includes(""))  {
             
             setError(true)
             return;
@@ -56,10 +56,10 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
         }
 
 
-        if(paciente.id){
+        if(paciente.id) {
             // Editando el Registro
             objetoPacientes.id = paciente.id
-            const pacientesActualizados = pacientes.map(pacienteState => pacienteState.id ===
+            const pacientesActualizados = pacientes.map( pacienteState => pacienteState.id ===
             paciente.id ? objetoPacientes : pacienteState)
 
                 setPacientes(pacientesActualizados)
@@ -72,10 +72,8 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
         }   
 
         
-
-        setPacientes([...pacientes, objetoPacientes])
-
         // reiniciar form
+        
         setNombre("")
         setPropietario("")
         setEmail("")

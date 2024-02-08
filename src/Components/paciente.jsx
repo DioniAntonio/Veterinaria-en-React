@@ -1,4 +1,6 @@
+
 const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
+
     const {nombre, email, propietario, fecha, sintomas, id} = paciente
    
    

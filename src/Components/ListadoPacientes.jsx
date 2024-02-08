@@ -1,7 +1,7 @@
 
 import Paciente from "./paciente"
 
-const ListadoPacientes = ({pacientes, setPaciente,eliminarPaciente}) => {
+const ListadoPacientes = ({pacientes, setPaciente, eliminarPaciente}) => {
    
 
     return (
